@@ -1,7 +1,7 @@
-# Document Parsing Agent (KYC)- PAN card
+# Document Parsing Agent (KYC)
 
 ## Overview
-This project implements a **Document Parsing Agent** that extracts **structured KYC information** from **PAN Card** and **Aadhaar Card images** using **Google Gemini Flash**.  
+This project implements a **Document Parsing Agent** that extracts **structured KYC information** from documents(images or pdf) using **Google Gemini Flash**.  
 The solution is exposed as a **POST API** built with **FastAPI** and returns extracted details in **JSON format**.
 
 ---
@@ -19,16 +19,18 @@ The solution is exposed as a **POST API** built with **FastAPI** and returns ext
 ---
 
 ## Tech Stack
-- Python
-- FastAPI
-- Uvicorn
-- Google Gemini Flash
-- Pillow (image handling)
+fastapi
+uvicorn
+python-multipart
+pillow
+python-dotenv
+google-genai
+pymupdf
 
 ---
 
 ## Features
-- Accepts PAN / Aadhaar **images**
+- Accepts  **image** and **pdf**
 - Extracts key fields using Gemini Flash
 - Returns structured JSON response
 - API-based design for easy integration
@@ -40,8 +42,8 @@ POST /parse-kyc
 
 
 ### Input
-- `document_type`: PAN or AADHAAR
-- `file`: Image (jpg / png)
+
+- `file`: Image (jpg / png / jpeg) and File(pdf)
 
 ### Output
 - JSON containing extracted KYC fields
