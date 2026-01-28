@@ -1,4 +1,4 @@
-# Document Parsing Agent (KYC)
+# Document Parsing Agent (KYC)- PAN card
 
 ## Overview
 This project implements a **Document Parsing Agent** that extracts **structured KYC information** from **PAN Card** and **Aadhaar Card images** using **Google Gemini Flash**.  
