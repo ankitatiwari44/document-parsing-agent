@@ -1,7 +1,7 @@
 from google import genai
 from PIL import Image
 
-client = genai.Client(api_key="AIzaSyA6UaiupZ3G-HLKvYuOL5XeE6PLPQkfsYI")
+client = genai.Client(api_key="")
 
 img = Image.open("test.jpeg")
 
